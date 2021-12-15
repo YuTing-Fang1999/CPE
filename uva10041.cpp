@@ -14,7 +14,7 @@ int main()
 		for(int i=0;i<r;++i){
 			cin>>s[i];
 		}
-		sort(&s[0],&s[r]);
+		sort(s,s+r);
 		
 		int mid = s[r/2];
 		int distances = 0;
