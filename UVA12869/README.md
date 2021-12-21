@@ -54,4 +54,5 @@ int main(){
 後來用另一個vector紀錄之前算過的0，還是TLE  
 最後上網看答案才知道會有一種數學的規律==  
 ![image](%E6%95%B8%E5%AD%B8%E8%A6%8F%E5%BE%8B.png)
+出處: https://www.youtube.com/watch?v=yYWqH2k22Yk  
 這我如果沒看答案真的想不到耶  
