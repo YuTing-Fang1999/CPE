@@ -8,6 +8,20 @@ atoi(str.c_str)
 ```
 int src; cin>>src;
 ```
+### struct
+```
+//建構
+struct Call{
+	int from;
+	int to;
+	int tar;
+	Call(int a,int b,int c){
+		from=a; to=b; tar=c;
+	}
+};
+//創立物件
+Call c(a,b,c);
+```
 ### multimap
 引入
 ```
