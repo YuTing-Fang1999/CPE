@@ -13,6 +13,10 @@ multimap?
 ```
 atoi(str.c_str)
 ```
+直接輸入就行了!
+```
+int src; cin>>src;
+```
 ### multimap
 引入
 ```
