@@ -1,5 +1,6 @@
 #include <iostream>
-#include <string>
+#include <string.h> //memset
+#include <climits> //INT_MAX
 using namespace std;
 
 string str;
