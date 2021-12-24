@@ -15,7 +15,7 @@
 (z, x, y)
 (z, y, x)
 ```
-使用`LIS`找
+使用`LIS`找  
 一開始一直掉進LIS找最長序列的陷阱去  
 但是!最多box(序列最長)不一定等於最高  
 所以不能完全套用LIS  
@@ -31,25 +31,20 @@ LIS有兩個重點
 
 #### 找的順序
 ```
-int max=0;
+//using LIS
 //先從最底的box放(i=0)
 for(int i=0;i<boxes.size();++i){
-    HEIGHT[i] += boxes[i].H; //加入本身高度
-    //再找能放在i上面的box，因為i以前的box不可能放在i上面(都比較大)，所以可以從i+1找  
-		for(int j=i+1;j<boxes.size();++j){
-			if( (boxes[j].L < boxes[i].L) && 
-				(boxes[j].W < boxes[i].W) && 
-				(HEIGHT[i]+boxes[j].H > HEIGHT[j]) ){ //如果加入後能讓高度變大
-				 HEIGHT[j] = HEIGHT[i]+boxes[j].H;
-			}
+    	if(!HEIGHT[i]) HEIGHT[i] = boxes[i].H; //如果為0的話就初始本身高度
+	//再找能放在i上面的box，因為i以前的box不可能放在i上面(都比較大)，所以可以從i+1找  
+	for(int j=i+1;j<boxes.size();++j){
+		if( (boxes[j].L < boxes[i].L) && 
+			(boxes[j].W < boxes[i].W) && 
+			(HEIGHT[i]+boxes[j].H > HEIGHT[j]) ){ //如果加入後能讓高度變大
+			 HEIGHT[j] = HEIGHT[i]+boxes[j].H;
 		}
-    if(HEIGHT[i] > max) max = HEIGHT[i];
 	}
+    	//後面到這裡基本上就全算完了，直接找最大值 
+    	if(HEIGHT[i] > max) max = HEIGHT[i];
+}
+
 ```
-
-
-### 疑問
-* 如果長寬小的box排在前面會怎樣?   
-  -> 極端的狀況是長寬由小排到大，這樣LEN最多只會有1  
-  -> 長寬要由大排到小!(先排長再排寬)
-總之，就是要排序，並且依照長寬高的順序由大排到小
