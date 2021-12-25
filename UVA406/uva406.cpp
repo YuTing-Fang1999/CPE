@@ -14,14 +14,14 @@ int main(){
 		printf("%d %d:",N,C);
 		//fing prime
 		for(int i=PRIME.back()+1;i<=N;++i){
-			bool flag = true;
+			bool isPrime = true;
 			for(int j=1;j<PRIME.size();++j){
 				if(i%PRIME[j] == 0) {
-					flag = false;
+					isPrime = false;
 					break;
 				}
 			}
-			if(flag) PRIME.push_back(i);
+			if(isPrime) PRIME.push_back(i);
 			len[i] = PRIME.size();
 		}
 		//fing boundary
