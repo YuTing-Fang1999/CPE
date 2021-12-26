@@ -28,10 +28,8 @@ int main(){
 		}
 		//find boundary
 		--C;
-		int a = (LEN[N])/2-C-(LEN[N]%2==0);
-		if(a<0) a=0;
-		int b = (LEN[N])/2+C;
-		if(b>=LEN[N]) b=LEN[N]-1;
+		int a = len[N]/2-C-(len[N]%2==0); if(a<0) a=0;
+		int b = len[N]/2+C; if(b>=len[N]) b=len[N]-1;
 		//output
 		for(int i=a; i<=b; ++i){
 			cout<<" "<<PRIME[i];
