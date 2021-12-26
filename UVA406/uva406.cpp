@@ -14,7 +14,7 @@ int main(){
 	LEN.push_back(2);
 	while(cin>>N>>C){
 		printf("%d %d:",N,C);
-		//fing prime
+		//find prime
 		for(int i=LEN.size();i<=N;++i){
 			bool isPrime = true;
 			for(int j=1;j<PRIME.size();++j){
@@ -26,7 +26,7 @@ int main(){
 			if(isPrime) PRIME.push_back(i);
 			LEN.push_back(PRIME.size());
 		}
-		//fing boundary
+		//find boundary
 		--C;
 		int a = (LEN[N])/2-C-(LEN[N]%2==0);
 		if(a<0) a=0;
