@@ -11,3 +11,9 @@ y起點 = -low
 
 上升(R) 是先輸入後再更新座標  
 下降(F) 是先更新座標再輸入  
+
+### 標準解答的做法
+https://cpe.cse.nsysu.edu.tw/cpe/file/attendance/problemPdf/10800.php  
+直接開兩倍的畫布，從中間開始畫，並且記錄上下邊界  
+去掉空格的方法是從尾部開始填入'\0'，直到不再遇到空格(碰到尾端)  
+之後再print row時用--i的方式倒轉y的輸出順序  
