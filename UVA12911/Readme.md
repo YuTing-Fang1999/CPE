@@ -26,7 +26,7 @@ i       i & (1<<j)     j
 111       1 10 100     1 2 3 
 ```
 ### 一直TTL
-使用map還不夠，要使用unordered_map
-但是unordered_map好像是C++11的==  
+使用map還不夠，要使用unordered_map  
+但是unordered_map好像是C++11的==   
 到底到時候能不能用C++11阿  
 不然就要自己手刻hash table了  
