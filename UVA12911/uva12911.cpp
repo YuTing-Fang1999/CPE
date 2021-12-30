@@ -6,7 +6,7 @@ int N,T;
 int arr[41];
 long long Na,Nb;
 int i,j; 
-//­n¨Ï¥Î unordered_mapÂø´êªí(hash table) O(1)¡A¤£µM·|¤@ª½TTL 
+//è¦ä½¿ç”¨ unordered_mapé›œæ¹Šè¡¨(hash table) O(1)ï¼Œä¸ç„¶æœƒä¸€ç›´TTL 
 unordered_map< long long, int > Sa, Sb;
 unordered_map< long long, int >::iterator iter;
 
@@ -15,10 +15,10 @@ int main(){
 		Sa.clear(); Sb.clear();
 		for(i=0;i<N;++i) cin>>arr[i];
 		
-		Nb = N/2;
-		Na = N-Nb; //Na­n¤ñ¸û¤j¡A·í¥u¦³¤@­Ó¼Æ®É¤~¤£·|¥X¿ù
+		Na = N/2;
+		Nb = N-Na;
 		 
-		//­n¨Ï¥Îlong long !! 
+		//è¦ä½¿ç”¨long long !! 
 		long long sum=0;
 		for(i=1;i<(1<<Na);++i){
 			sum=0;
