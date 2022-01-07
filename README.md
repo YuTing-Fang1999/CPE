@@ -26,6 +26,20 @@ int num = stoi(str); //<cmath>
 ```
 int src; cin>>src;
 ```
+### 去掉字串空格的方法
+要#include \<algorithm\>  //remove  
+str = "  Arbitrary   str ing with lots of spaces to be removed   .";
+```
+remove(str.begin(), str.end(), ' '); //remove可以指定任何要刪除的元素
+//Arbitrarystringwithlotsofspacestoberemoved.o be removed   . 
+```
+因為remove後陣列的長度還是不變，尾部沒換成'\0'，還是會將舊有的資料印出  
+所以要用erase指定頭尾範圍把尾部的東西去掉  
+remove會回傳尾部的位置，可直接使用  
+```
+str.erase(remove(str.begin(), str.end(), ' '), str.end()); //erase是大多數STL的內建函數
+//Arbitrarystringwithlotsofspacestoberemoved.
+```
 ### struct
 ```
 //建構
