@@ -10,5 +10,13 @@ For example, there are 850 groups that have 80 to 99 clusters.
 For example, there are 8
 50 groups that have 80 to 99 clusters.
 ```
+```
+2
+For example, 
+there are 850 groups that have 80 to 99 clusters.
+2
+For example, there are 8
+50 groups that have 80 to 99 clusters.
+```
 兩個合起來都會是For example, there are 850 groups that have 80 to 99 clusters.  
 但以上要輸出的是Presentation Error
