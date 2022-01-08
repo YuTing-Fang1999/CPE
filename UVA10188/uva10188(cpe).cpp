@@ -11,13 +11,13 @@ string str;
 int main(){
 	
 	while(cin>>N && N){
-		int y=-N; //¦©±¼´«¦æªº­Ó¼Æ 
+		int y=-N; //æ‰£æ‰æ›è¡Œçš„å€‹æ•¸ 
 		ans=res="";
 		//ans
 		getchar();
 		while(N--){
 			getline(cin,str);
-			ans+=(str+'\n'); //ª`·N´«¦æªº¦a¤è¦pªG¤£¤@¼Ë¤]ºâPE 
+			ans+=(str+'\n'); //æ³¨æ„æ›è¡Œçš„åœ°æ–¹å¦‚æœä¸ä¸€æ¨£ä¹Ÿç®—PE 
 		}
 		//res
 		cin>>M; getchar();
