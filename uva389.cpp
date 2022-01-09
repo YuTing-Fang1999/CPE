@@ -3,13 +3,13 @@
 #include <stdlib.h>
 using namespace std;
 
-//ª`·N»PCPEªºÃD¥Ø¦³¨Ç¤p¤£¦P 
+//æ³¨æ„èˆ‡CPEçš„é¡Œç›®æœ‰äº›å°ä¸åŒ 
 int main(){
 	string num;
 	int fromBase;
 	int toBase;
 	while(cin>>num>>fromBase>>toBase){
-	
+		bool isError;
 		int base = 1;
 		int n1=0;
 		for(int i=num.size()-1;i>=0;--i){
@@ -31,10 +31,10 @@ int main(){
 			else digit = ((n1%toBase-10) + 'A');
 			n2[idx--] = digit;
 			n1/=toBase;
-			if(idx<0) break;
+			if(idx<0) {isError=true;break;}
 		}
-		
-		printf("%s\n",n2);
+		if(isError) printf("ERROR\n");
+		else printf("%s\n",n2);
 	}
 	return 0;
 }
