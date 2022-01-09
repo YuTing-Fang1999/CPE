@@ -25,13 +25,15 @@ int main(){
 	note['A'] = "1110000000";
 	note['B'] = "1100000000";
 	
-	cin>>T;
+	cin>>T; getchar();
 	while(T--){
 		memset(finger, 0, sizeof(finger));
-		cin>>str;
-		for(int j=0;j<10;++j){
-			finger[j] += note[str[0]][j]-'0';
-		}
+		getline(cin, str);
+		//the song maybe empty!!!
+		if(str.size())
+			for(int j=0;j<10;++j){
+				finger[j] += note[str[0]][j]-'0';
+			}
 		
 		for(int i=1;i<str.size();++i){
 			for(int j=0;j<10;++j){
