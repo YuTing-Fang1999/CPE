@@ -3,7 +3,7 @@
 #include <stdlib.h>
 using namespace std;
 
-//ª`·N»PCPEªºÃD¥Ø¦³¨Ç¤p¤£¦P 
+//æ³¨æ„èˆ‡CPEçš„é¡Œç›®æœ‰äº›å°ä¸åŒ 
 int main(){
 	string num;
 	int fromBase;
@@ -30,15 +30,15 @@ int main(){
 		while(n1){
 			if(n1%toBase<=9) digit = (n1%toBase+'0');
 			else digit = ((n1%toBase-10) + 'A');
+			
+			if(idx<0) {isError=true;break;}
 			n2[idx--] = digit;
 			n1/=toBase;
-			if(idx<0) {isError=true;break;}
 		}
 		
 		if(isError) printf("  ERROR\n");
-		else if(isZero) printf("      0\n");//ª`·N¼Æ¦r¬°0ªºcase 
+		else if(isZero) printf("      0\n");//æ³¨æ„æ•¸å­—ç‚º0çš„case 
 		else printf("%s\n",n2);
 	}
 	return 0;
 }
-
