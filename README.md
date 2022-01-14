@@ -40,7 +40,10 @@ int num = stoi(str); //<cmath>
 int src; cin>>src;
 ```
 ### 去掉字串空格的方法
-要#include \<algorithm\>  //remove  
+要#include \<algorithm\>  //remove  reverse
+* 補充 - reverse可以將順序倒轉  
+ `reverse(v.begin(), v.end());`  
+
 str = "  Arbitrary   str ing with lots of spaces to be removed   .";
 ```
 remove(str.begin(), str.end(), ' '); //remove可以指定任何要刪除的元素
