@@ -39,6 +39,14 @@ int num = stoi(str); //<cmath>
 ```
 int src; cin>>src;
 ```
+
+### int to string
+```
+#include <sstream>
+stringstream ss;
+ss << num;
+ss >> str;
+```
 ### 去掉字串空格的方法
 要#include \<algorithm\>  //remove  reverse
 * 補充 - reverse可以將順序倒轉  
