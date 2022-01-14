@@ -1,7 +1,6 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include <cmath>
 using namespace std;
 
 int x;
@@ -12,8 +11,8 @@ vector< int > a;
 int main(){
 	while(cin>>x){
 		cin.ignore();
-    	ss.clear();
-    	a.clear();
+		ss.clear();
+		a.clear();
     	
 		getline(cin,str); 
 		ss<<str;
