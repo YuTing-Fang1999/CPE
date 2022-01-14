@@ -13,7 +13,20 @@
 i << n //將i左移n位 (左移一位代表乘2)
 i >> n //將i右移n位 (右移一位代表除2)
 ```
+### stringstream
+```
+#include <sstream>
 
+stringstream ss;
+getline(cin,line); cin.ignore();
+ss<<line;
+while(ss>>num){
+	...
+}
+```
+宣告stringstream類別的時候其實蠻消耗CPU的時間，在解題目以及應用的時候不太建議重複宣告  
+cin.ignore()的詳細介紹:   
+http://justimchung.blogspot.com/2016/11/c-cin-getline.html
 ### string to int
 ```
 atoi(str.c_str)
