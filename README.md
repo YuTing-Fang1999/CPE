@@ -104,8 +104,9 @@ mySet.find(n);
 mySet.count(n);
 ```
 ### map iterator
+map的int,double等數字默認值為0  
 ```
-map< long long, int > myMap;
+map< long long, int > myMap; 
 map< long long, int >::iterator iter;
 for (iter=myMap.begin();iter!=myMap.end();++iter){
 	iter->first //key
