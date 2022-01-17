@@ -7,4 +7,12 @@ https://github.com/YuTing-Fang1999/Algorithms-Java/tree/master/hw03_IslandCounti
 
 或是直接用DFS判斷  
 https://timbian.wordpress.com/2015/03/21/uva-615-is-it-a-tree/  
-tree 真的是我永遠的痛ಥ_ಥ
+tree 真的是我永遠的痛ಥ_ಥ  
+
+### 解法
+isNode[i] 判斷是不是node  
+in[i]  判斷是不是root  
+visited[i]  
+
+如果是root->DFS or BFS->break;  
+如果是node但沒被拜訪過 or visited超過一次-> not tree
