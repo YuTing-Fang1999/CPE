@@ -16,3 +16,7 @@ visited[i]
 
 如果是root->DFS or BFS->break;  
 如果是node但沒被拜訪過 or visited超過一次-> not tree
+
+### CPE的標準解答
+解法蠻簡單的，每加一個node就更新所有node的father，用for迴圈更新所有陣列    
+我之前更新是用pre[c]!=0做while迴圈，所以如果有環會無窮迴圈，以至於一直timelimit，下次要注意  
