@@ -1,4 +1,5 @@
 這題應該只有F這個指令比較麻煩，其餘的照著題目做就好了  
+注意V、H、K可以整合成一個function  
 ```
 //r 是region的顏色，c是要填入的顏色
 void F(int i,int j, char r, char c){
