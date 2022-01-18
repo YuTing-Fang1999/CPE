@@ -12,7 +12,7 @@ void F(int i,int j, char r, char c){
 }
 ```
 ### 注意
-X,Y再陣列的順序是顛倒的 => arr[Y][X]  
+X,Y在陣列的順序是顛倒的 => arr[Y][X]  
 Y1,Y2 / X1,X2 並沒有指定誰會比較大，要自己判斷  
 ```
 if(Y>Y2) swap(Y,Y2);
