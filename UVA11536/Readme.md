@@ -2,6 +2,7 @@
 題目只求最短的長度，所以從左掃到右，記住目前最小的Len，再與之後的Len做比較，留下最小的Len  
 
 #### 如何更新a
+當前面的數可以丟掉了(數字重複or不在K集合裡)就更新  
 ```
 while(cnt[X[a]]>1) {
   //beware the order
@@ -31,6 +32,11 @@ X.push_back(2);
 X.push_back(3);
 for(int i=3;i<N;++i)
   X.push_back((X[i-1]+X[i-2]+X[i-3])%M+1);
+```
+
+#### vector初始化
+```
+X.assign(N,0)
 ```
 
 
