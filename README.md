@@ -14,7 +14,10 @@
 ```
 X.assign(N,0);
 ```
-
+二維
+```
+vector< vector<int> > vec(row, vector<int>(col,-1))
+```
 ### sort
 ```
 #include <algorithm>
