@@ -10,7 +10,7 @@ output
 * case number要空4格
 * 輸入為0就直接輸出0
 
-我的寫法
+#### 我的寫法
 ```cpp
 #include <iostream>
 using namespace std;
@@ -51,7 +51,12 @@ int main(){
 }
 ```
 
-網路上的寫法(看起來格式是比較整齊一點)
+
+#### 網路上的寫法  
+一樣是用遞迴，但遞迴的層數比我還多，每print一次數字就遞迴一次  
+運用遞迴的順序去記住print的順序  
+當數字小於100時就print，之後才會往下print單位    
+雖然比較不直觀，但這遞迴的用法我要好好學習一下  
 ```cpp
 #include <iostream>
 #include <iomanip>
