@@ -3,10 +3,10 @@
 using namespace std;
 
 int main(){
-	//ª`·N¼Æ¦r¦³¨ì2^32 
+	//è¨˜å¾—è¦long long! 2^32 
 	long long int n1,n2;
 	while(cin>>n1>>n2){
-		//ª`·N¬Olld 
+		//Âª`Â·NÂ¬Olld 
 		printf("%lld\n",llabs(n1-n2));
 	}
 	return 0;
