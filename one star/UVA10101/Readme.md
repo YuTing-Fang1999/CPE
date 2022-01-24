@@ -20,10 +20,10 @@ long long num;
 int T=0;
 
 //利用遞迴反轉輸出順序 
-void print_ans(long long num,bool last){
+void bangla(long long num){
 	kuti=num/10000000; num%=10000000;
 	if(kuti>=100){
-		print_ans(kuti,false);
+		bangla(kuti);
 		kuti=kuti%100; 
 		num%=10000000;
 		printf(" kuti");
@@ -44,7 +44,7 @@ int main(){
 	while(cin>>num){
 		printf("%4d.",++T);
 		if(num==0) printf(" 0");
-		else print_ans(num,true);
+		else bangla(num);
 		printf("\n");
 	}
 	return 0;
