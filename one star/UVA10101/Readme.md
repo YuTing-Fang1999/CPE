@@ -28,8 +28,8 @@ void bangla(long long num){
 		num%=10000000;
 		printf(" kuti");
 	}
-	else{
-		if(kuti) printf(" %ld kuti",kuti);
+	else if(kuti){
+		printf(" %ld kuti",kuti);
 	}
 	lakh=num/100000; num%=100000;
 	hajar=num/1000; num%=1000;
