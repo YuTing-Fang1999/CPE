@@ -14,6 +14,7 @@ int main(){
 		cin.ignore(1024,'\n');
 		myLove[str]++;
 	}
+	//map會依照ASCII排序
 	for(iter=myLove.begin();iter!=myLove.end();++iter){
 		printf("%s %d\n",iter->first.c_str(), iter->second);
 	}
