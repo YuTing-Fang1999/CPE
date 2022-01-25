@@ -11,6 +11,8 @@ return BFS();
 ```
 #### 注意S為1的case
 `Please note that 1 and A are not being considered as a factor of A`=>直接輸出-1
+#### 注意S=T的case
+`if (S==T) ans = 0;`
 #### 注意BFS結束的判斷
 * node<T才可加入queue
 * 如果queue為空就`return -1;`，否則`return BFS();`
@@ -63,14 +65,17 @@ int main(){
 				isPrime[j]=false;
 		}
 	}
-	
+	//BFS
 	while(cin>>S>>T && S && T){
 		memset(isAppear,false,sizeof(isAppear));
-		q.push(Node(S,0));
-		if(S==1) ans=-1;
-		else ans = BFS();
-		printf("Case %d: %d\n",++CASE,ans);
 		while(!q.empty()) q.pop();
+		
+		q.push(Node(S,0));
+		if(S==T) ans=0;
+		else if(S==1) ans=-1;
+		else ans = BFS();
+		
+		printf("Case %d: %d\n",++CASE,ans);
 	}
 	
 	return 0;
