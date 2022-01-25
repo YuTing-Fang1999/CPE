@@ -19,12 +19,12 @@ for(int i=0;i<texts.size();++i){
 while((c = getchar())!='\n'){
   c = toupper(c);
   if('A'<=c && c<='Z') {
-    num[c-'A']++;
-    if(num[c-'A']>max) max=num[c-'A'];
-  }
+      t[c-'A']++;
+      if(t[c-'A']>mx) mx=t[c-'A'];
+    }
 }
 //最後從最大的次數開始print
-for(int f=max;max>0;--max){
+for(int f=mx;f>0;--f){
   for(int i=0;i<26;++i){
     if(t[i]==f) printf("%c %d\n",(char)i+'A',f);
   }
