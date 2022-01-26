@@ -1,6 +1,6 @@
 這題也是debug de 好久  
 注意以下程式碼執行完，n會等於3  
-```
+```cpp
 ss<<"1 1 1";
 int n=-1;
 while(ss>>a[++n]){
@@ -9,7 +9,7 @@ while(ss>>a[++n]){
 ```
 
 ### 原版-使用陣列
-```
+```cpp
 #include <iostream>
 #include <sstream>
 #include <cmath>
@@ -44,7 +44,7 @@ int main(){
 ```
 
 ### 下次還是直接使用vector好了，比較不會出錯
-```
+```cpp
 #include <iostream>
 #include <sstream>
 #include <vector>
@@ -81,7 +81,7 @@ int main(){
 ```
 
 ### 從尾算到頭效能更好
-```
+```cpp
 int n=a.size()-1;
 int num=0;
 int mul =1;
