@@ -1,4 +1,8 @@
-12959
+# 瘋狂誠設
+一推問題，編譯器好難找==，都過時了  
+需要Microsoft Visual Studio 10.0  
+https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
+
 # CPE
 ## 需複習的
 11728(如果正著推很難算就用逆推的!)   
