@@ -19,7 +19,7 @@
 #include <string>
 using namespace std;
 
-char grid[60][60],c;
+char grid[60][60];
 int m,n,T,k;
 bool isFind;
 int xChange[8]={1,-1,0,0,1,-1,-1,1};
@@ -50,27 +50,26 @@ int main(){
 		
 		cin>>k;
 		while(k--){
-			string str;
-			cin>>str;
-			for(int i=0;i<str.size();++i) str[i]=toupper(str[i]);
+			cin>>s;
+			for(int i=0;i<s.size();++i) s[i]=toupper(s[i]);
 			isFind=false;
 			for(int i=1;i<=m && !isFind;++i)
 			for(int j=1;j<=n && !isFind;++j)
-				if(str[0]==grid[i][j]){
-					if(str.size()==1){
+				if(s[0]==grid[i][j]){
+					if(s.size()==1){
 						cout<<i<<" "<<j<<endl;
 						isFind=true;
 					}else{
 						for(int dir=0;dir<8 && !isFind;++dir)
-						if(str[1]==grid[i+yChange[dir]][j+xChange[dir]])
-						if(DFS(i,j,dir,0,str)) {
+						if(s[1]==grid[i+yChange[dir]][j+xChange[dir]])
+						if(DFS(i,j,dir,0,s)) {
 							cout<<i<<" "<<j<<endl;
 							isFind=true;
 						}
 					}
 				}
 		}
-		cout<<endl;
+		if(T) cout<<endl;
 	}
 	return 0;
 } 
