@@ -55,21 +55,22 @@ int main(){
 			cin>>s;
 			for(int i=0;i<s.size();++i) s[i]=toupper(s[i]);
 			isFind=false;
+			
 			for(int i=1;i<=m && !isFind;++i)
 			for(int j=1;j<=n && !isFind;++j)
-				if(s[0]==grid[i][j]){
-					if(s.size()==1){
+			if(s[0]==grid[i][j]){
+				if(s.size()==1){
+					cout<<i<<" "<<j<<endl;
+					isFind=true;
+				}else{
+					for(int dir=0;dir<8 && !isFind;++dir)
+					if(s[1]==grid[i+yChange[dir]][j+xChange[dir]])
+					if(DFS(i,j,dir,0,s)) {
 						cout<<i<<" "<<j<<endl;
 						isFind=true;
-					}else{
-						for(int dir=0;dir<8 && !isFind;++dir)
-						if(s[1]==grid[i+yChange[dir]][j+xChange[dir]])
-						if(DFS(i,j,dir,0,s)) {
-							cout<<i<<" "<<j<<endl;
-							isFind=true;
-						}
 					}
 				}
+			}
 		}
 		if(T) cout<<endl;
 	}
