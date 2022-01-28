@@ -1,5 +1,5 @@
-# 瘋狂誠設
-一推問題，編譯器好難找==，都過時了  
+# 瘋狂成設
+一推問題，編譯器好難找==，符合版本的都過時了  
 需要Microsoft Visual Studio 10.0  
 https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
 
