@@ -10,7 +10,7 @@ https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
 12911(完全不會寫QQ)  
 725(能用暴力解救用暴力解!)  
 12218(next_permutation,  質數篩)  
-165還是不太會解(可能我的功力還不夠...)
+165還是不太會解(可能我的功力還不夠...)  
 13257(建表)
 
 ## 基本用法
