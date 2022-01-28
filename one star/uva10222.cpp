@@ -4,7 +4,7 @@ using namespace std;
 
 
 int main(){
-	//°O±o¯S®í²Å¸¹\«e­±­n¥['\'
+	//è¨˜å¾—ç‰¹æ®Šç¬¦è™Ÿ\å‰é¢è¦åŠ '\'
 	string str="`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./";
 	
 	char c;
@@ -16,7 +16,7 @@ int main(){
 			printf("%c",str[pos-2]);
 		}
 	}
-	//¨S¥[´«¦æ·|WA== 
+	//æ²’åŠ æ›è¡ŒæœƒWA== 
 	cout<<endl;
 	return 0;
 }
