@@ -60,7 +60,7 @@ bool isContinue(){
 
 int main(){
 	while(cin>>k>>q>>m){
-    	//compute row col
+    		//compute row col
 		kR=k/8;kC=k%8;
 		qR=q/8;qC=q%8;
 		mR=m/8;mC=m%8;
