@@ -4,7 +4,7 @@ using namespace std;
 char c;
 bool n=0;
 int main(){
-	//°O±o­n¥[!=EOF¡A§_«h·|TLE 
+	//記得要加!=EOF，否則會TLE 
 	while((c=getchar())!=EOF){
 		if(c=='"'){
 			n=!n;
