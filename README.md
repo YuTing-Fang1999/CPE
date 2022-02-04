@@ -5,6 +5,7 @@ https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
 
 # CPE
 ## 需複習的
+10268(考前再練一次)   
 11728(如果正著推很難算就用逆推的!)   
 437(要懂得是演算法的精華而不是直接套用!)  
 12911(完全不會寫QQ)  
