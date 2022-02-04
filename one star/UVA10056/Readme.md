@@ -35,6 +35,7 @@ a = q^RN-1/q^N-1 = -1/q^N-1 = 1/1-q^N
 
 ans = `q^(I-1) * p * (1/1-q^N) = q^(I-1)*p / 1-q^N`
 
+### code
 ```cpp
 #include <iostream>
 #include <cmath>
