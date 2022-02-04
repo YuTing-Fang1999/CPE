@@ -34,3 +34,24 @@ a = q^RN-1/q^N-1 = -1/q^N-1 = 1/1-q^N
 ```
 
 ans = `q^(I-1) * p * (1/1-q^N) = q^(I-1)*p / 1-q^N`
+
+```cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int S,N,I;
+//注意要使用double精度才會準 
+double p,q,ans;
+int main(){
+	cin>>S;
+	while(S--){
+		cin>>N>>p>>I;
+		q=1-p;
+		//注意p為0的case 
+		if(p==0) printf("%.4f\n",0);
+		else printf("%.4f\n",(pow(q,(I-1))*p) / (1-pow(q,N)));
+	}
+	return 0;
+} 
+```
