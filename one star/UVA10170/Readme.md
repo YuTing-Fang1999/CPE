@@ -27,3 +27,21 @@ while(cin>>M>>D){
 但好像還是會比較慢  
 使用加 => 68ms  
 使用減 => 44ms  
+
+### code
+```cpp
+#include <iostream>
+using namespace std;
+
+long long D,M;
+int main(){
+  while(cin>>M>>D){
+    while(D>0){
+      D-=M;
+      M++;
+    }
+    cout<<M-1<<endl;
+  }
+	return 0;
+}
+```
