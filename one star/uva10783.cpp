@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//µ¥®t¯Å¼Æ
+//ç­‰å·®ç´šæ•¸
 int T;
 int a,b;
 int main(){
