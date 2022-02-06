@@ -5,7 +5,7 @@ using namespace std;
 //2a=s+d
 //a=(s+d)/2
 //b=s-a;
-//ª`·N«D­t¾ã¼Æ¥]§t0 
+//æ³¨æ„éè² æ•´æ•¸åŒ…å«0 
 int n;
 double s,d,a,b;
 int main(){
