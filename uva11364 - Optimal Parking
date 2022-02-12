@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int T,N,num,minNum,maxNum;
+int main(){
+	cin>>T;
+	while(T--){
+		cin>>N;
+		minNum=1e8;
+		maxNum=0;
+		while(N--){
+			cin>>num;
+			if(num<minNum) minNum=num;
+			if(num>maxNum) maxNum=num;
+		}
+		cout<<(maxNum-minNum)*2<<endl;
+	}
+	return 0;
+}
