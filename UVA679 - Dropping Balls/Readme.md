@@ -19,6 +19,7 @@ idx = 0 1 2 3            idx = 0 1 2 3
 
 ```cpp
 #include <iostream>
+#include <cmath> 
 using namespace std;
 
 int T,D,I;
@@ -39,5 +40,4 @@ int main(){
 	cin>>T;
 	return 0;
 }
-
 ```
