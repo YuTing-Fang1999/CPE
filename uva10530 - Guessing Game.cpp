@@ -8,10 +8,10 @@ int main(){
 	while(cin>>N && N){
 		getchar();//del '\n'
 		getline(cin,str);
-		if(str=="too high" && N<H){//注意N要比目前的更低才要更新
+		if(str=="too high" && N<=H){//注意N要比目前的更低才要更新
 			H=N-1;
 		}
-		else if(str=="too low" && N>L){
+		else if(str=="too low" && N>=L){
 			L=N+1;
 		}
 		else if(str=="right on"){
