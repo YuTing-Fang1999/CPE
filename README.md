@@ -18,6 +18,28 @@ https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
 
 
 ## 基本用法
+### str reverse
+uva11192
+```cpp
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int N;
+string str;
+int main(){
+	while(cin>>N && N){
+		cin>>str;
+		N = str.size()/N;
+		for(int i=0;i<str.size();i+=N){
+			reverse(&str[i],&str[i+N]);
+		}
+		cout<<str<<endl;
+	}
+	return 0;
+}
+```
 ### queue
 `#include <queue>`
 * push：把值加到尾巴  
