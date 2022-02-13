@@ -15,6 +15,7 @@ https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
 13257(建表)   
 255(不難但容易出bug的模擬題)   
 490(善用algorithm的reverse)   
+1207(LCD變化題)  
 
 
 ## 基本用法
