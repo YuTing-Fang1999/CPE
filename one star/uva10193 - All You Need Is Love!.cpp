@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-//±N¤G¶i¦ìÂà­¼¤Q¶i¦ì¡A§PÂ_s1,s2¬O§_¨ã¦³¤½¦]¼Æ => GCD¤£¬°1 
-//ª`·N¤G¶i¦ìÂà¤Q¶i¦ìªººâªk 
+//å°‡äºŒé€²ä½è½‰åé€²ä½ï¼Œåˆ¤æ–·s1,s2æ˜¯å¦å…·æœ‰å…¬å› æ•¸ => GCDä¸ç‚º1 
+//æ³¨æ„äºŒé€²ä½è½‰åé€²ä½çš„ç®—æ³• 
 int N;
 string s1,s2;
 int n1,n2;
