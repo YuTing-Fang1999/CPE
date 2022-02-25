@@ -22,7 +22,7 @@ int main(){
 		for(iter=species.begin();iter!=species.end();++iter){
 			printf("%s %.4f\n",iter->first.c_str(),iter->second/tot*100);
 		}
-		//ª`·N³Ì«á¤@¦æ¤£¯à´«¦æ 
+		//æ³¨æ„æœ€å¾Œä¸€è¡Œä¸èƒ½æ›è¡Œ 
 		if(T>0) cout<<endl;
 	}
 	return 0;
