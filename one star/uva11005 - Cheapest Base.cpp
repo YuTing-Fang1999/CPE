@@ -9,6 +9,7 @@ queue< int > baseQueue;
 int main(){
 	cin>>T;
 	for(int CASE=1;CASE<=T;++CASE){
+		if(CASE>1) cout<<endl;
 		printf("Case %d:\n",CASE);
 		for(int i=0;i<36;++i) cin>>cost[i];
 		
