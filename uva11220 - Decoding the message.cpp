@@ -8,14 +8,14 @@ stringstream ss;
 string str;
 int main(){
 	cin>>T;
-	getchar(); //ª`·N­n¦Y±¼¨â­Ó'\n' 
+	getchar(); //æ³¨æ„è¦åƒæ‰å…©å€‹'\n' 
 	getchar();
 	for(int CASE=1;CASE<=T;++CASE){
-		if(CASE>1) cout<<endl; //³Ì«á¤£¯à¦³ªÅ®æ 
+		if(CASE>1) cout<<endl; //æœ€å¾Œä¸èƒ½æœ‰ç©ºæ ¼ 
 		printf("Case #%d:\n",CASE);
-		while(getline(cin,str) && str!=""){ //ª`·N°±¤î±ø¥ó¬°ªÅ¦r¦ê 
+		while(getline(cin,str) && str!=""){ //æ³¨æ„åœæ­¢æ¢ä»¶ç‚ºç©ºå­—ä¸² 
 			//cout<<str<<endl;
-			ss.clear(); //ª`·N­n²MªÅss 
+			ss.clear(); //æ³¨æ„è¦æ¸…ç©ºss 
 			ss<<str;
 			int idx=0;
 			while(ss>>str){
