@@ -24,20 +24,20 @@ char temp;
 Stone stone[105];
 int main(){
 	cin>>T;
-  	//起點
+	//起點
 	stone[0].type='B';
 	stone[0].M=0;
 	for(int CASE=1;CASE<=T;++CASE){
 		cin>>N>>D;
 		for(int i=1;i<=N;++i) cin>>stone[i].type>>temp>>stone[i].M;
-    	//終點
+		//終點
 		stone[N+1].type='B';
 		stone[N+1].M=D;
 		
 		int pos1=0,pos2=0;
 		int maxLeap=0;
 		bool frog1=true,frog2=true;
-    	//輪流跳一步
+		//輪流跳一步
 		while(frog1 || frog2){
 			if(frog1){
 				int pre_pos1 = pos1;
