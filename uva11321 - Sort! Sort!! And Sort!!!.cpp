@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-//©_¤j>©_¤p>°¸¤p>°¸¤j
+//å¥‡å¤§>å¥‡å°>å¶å°>å¶å¤§
 
 int arr[100005];
 int N,M;
