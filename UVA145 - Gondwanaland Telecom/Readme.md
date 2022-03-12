@@ -69,3 +69,39 @@ int main(){
 	return 0;
 }
 ```
+
+### 解答版本
+天啊，沒想到這麼簡單就能寫出來了，看來我想得太複雜了...   
+直接標記每個分鐘，之後再計算就好了   
+但效能可能比較不好  
+```cpp
+int minu[1440] = {0}, time[3] = {0};
+x = a * 60 + b;
+y = c * 60 + d;
+if (y <= x){
+	for (i = 0; i < y; i++)
+		minu[i] = 1;
+	for (i = x; i < 1440; i++)
+		minu[i] = 1;
+}
+else{
+	for (i = x; i < y; i++)
+		minu[i] = 1;
+}
+for (i = 0; i < 480; i++){
+	if (minu[i] == 1)
+		time[2]++;
+}
+for (i = 480; i < 1080; i++){
+	if (minu[i] == 1)
+		time[0]++;
+}
+for (i = 1080; i < 1320; i++){
+	if (minu[i] == 1)
+		time[1]++;
+}
+for (i = 1320; i < 1440; i++){
+	if (minu[i] == 1)
+		time[2]++;
+}
+```
