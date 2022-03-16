@@ -6,7 +6,7 @@ double a,b;
 int main(){
 	while(cin>>a>>b && a && b){
 		int cnt=0;
-		//ª`·N­n¨Ï¥Î0.5¦Ó¤£­n¥Î1/2 
+		//æ³¨æ„è¦ä½¿ç”¨0.5è€Œä¸è¦ç”¨1/2
 		int n1=pow(a,0.5);
 		int n2=pow(b,0.5);
 		if(n1*n1<a) ++n1;
