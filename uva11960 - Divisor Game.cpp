@@ -1,26 +1,31 @@
 #include <iostream>
 using namespace std;
+#define MAXN 1000000
 
 int T,N;
 int table[1000005]={0};
 
 int main(){
 	//init table
-	for(int i=1;i<=1000000;++i){
-		for(int j=i;j<=1000000;j+=i){
-			table[j]+=1;
+	for(int i=1;i<=MAXN;++i){
+		for(int j=i;j<=MAXN;j+=i){
+			++table[j];
 		}
 	}
+	int max_idx = 2;
+	int max_num = table[2];
+	for(int i=3;i<=MAXN;++i){
+		if(table[i]>=max_num){
+			max_num = table[i];
+			max_idx = i;
+		}
+		table[i] = max_idx;
+	}
+	
 	cin>>T;
 	while(T--){
 		cin>>N;
-		int ans=N;
-		for(int i=N-1;i>0;--i){
-			if(table[i]>table[ans]){
-				ans=i;
-			}
-		}
-		cout<<ans<<endl;
+		cout<<table[N]<<endl;
 	}
 	return 0;
 }
