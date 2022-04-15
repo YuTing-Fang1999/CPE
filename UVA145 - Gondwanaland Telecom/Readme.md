@@ -105,3 +105,7 @@ for (i = 1320; i < 1440; i++){
 		time[2]++;
 }
 ```
+
+### 解答版本2
+https://yuihuang.com/zj-d089/   
+比較不會出bug  
