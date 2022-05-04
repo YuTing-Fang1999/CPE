@@ -30,10 +30,8 @@
 #include <algorithm>
 #include <string>
 using namespace std;
-
 //原本想直接用基底去計算，但題目說字串長度會到100，算出來的基底會overflow 
 //所以要直接使用二進位去算 
-
 int main(){
 	bool notFirst = false;
 	string str1, str2;
@@ -41,8 +39,7 @@ int main(){
 		if (notFirst) printf("\n");
         else notFirst = true;
 		
-		int ans[205]={0};
-		
+		int ans[105]={0};		
 		reverse(str1.begin(),str1.end());
 		reverse(str2.begin(),str2.end());
 		
@@ -52,38 +49,37 @@ int main(){
 		bool flag=true;
 		while(flag){
 			flag=false;
-			
-			if(ans[0]>=2){ //2 = 10
-				flag=true;
-				ans[0] -= 2;
-				ans[1] += 1;
-			}
-			
-			if(ans[1]>=2){ //20 = 101
-				flag=true;
-				ans[1] -= 2;
-				ans[0] += 1;
-				ans[2] += 1;
-			}
-			
-			for(int i=0;i<200;++i){
+			for(int i=0;i<105;++i){
 				if(ans[i]>=1 && ans[i+1]>=1){ // 11 => 100
 					flag=true;
 					ans[i]  -=1;
 					ans[i+1]-=1;
 					ans[i+2]+=1;
 				}
+			} 
+			if(ans[0]>=2){ //2 = 10
+				flag=true;
+				ans[0] -= 2;
+				ans[1] += 1;
+			}
+			if(ans[1]>=2){ //20 = 101 
+				flag=true;
+				ans[1] -= 2;
+				ans[0] += 1;
+				ans[2] += 1;
+			}
+			for(int i=2;i<105;++i){
 				if(ans[i]>=2){ //200 => 1001
 					flag=true;
 					ans[i]  -=2;
 					ans[i-2]+=1;
 					ans[i+1]+=1;
 				}
-			}
+			} 
 		}
-		
+				
 		bool p = false;
-		for(int i=200;i>=0;--i){
+		for(int i=104;i>=0;--i){
 			if(ans[i]>0) p=true;
 			if(p) printf("%d",ans[i]);
 		}
