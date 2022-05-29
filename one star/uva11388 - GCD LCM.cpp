@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-//程そ计 (GCD) 
-//程そ计 (LCM)
+//鏈�澶у叕鍥犳暩 (GCD) 
+//鏈�灏忓叕鍊嶆暩 (LCM)
 //L%G==0
 int main(){
 	int G, L, N;
