@@ -37,7 +37,7 @@ bool isIllegalState(){
 	return k==q;
 }
 
-bool isBetween(int a,int b,int c){
+bool isBetween(int a,int b,int c){ //c是否在a、b之間
 	if(a > b) swap(a,b);
 	return ( a <= c && c <= b);
 }
