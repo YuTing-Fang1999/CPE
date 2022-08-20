@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-// ¸òcoin exchangeÆZ¹³ªº
-// Á`¦@¦³¨âºØbrick 
-// brick¼Æ1»Pbrick¼Æ2
+// è·Ÿcoin exchangeè »åƒçš„
+// ç¸½å…±æœ‰å…©ç¨®brick 
+// brickæ•¸1èˆ‡brickæ•¸2
 // [3] = [2]+1 = [1]+2
 
 int main(){
