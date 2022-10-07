@@ -2,7 +2,7 @@ Can not use table (because the N is too big).
 We can find the regular pattern.  
 For example, when N = 6,   
 
-Maximum sum of set is the all factor of N
+Maximum sum of set is all factor of i
 ```
 1 -> (1)          
 2 -> (1, 2)  
