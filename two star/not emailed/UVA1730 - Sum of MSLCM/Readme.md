@@ -66,3 +66,25 @@ Occurrences times of 4 ~ 6 is 1
 L=R+1 (L=7)
 L>N: break
 ```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+	int N;
+	while(cin>>N && N){
+		long long int ans = 0,L=1,R=1,T; //Remember to use long long int!
+		while(L<=N){	
+			T=N/L;
+			R=N/T;
+			ans += T*(L+R)*(R-L+1)/2;
+			L=R+1;
+		}
+		printf("%lld\n",ans-1);
+	}
+	
+	return 0;
+}
+
+```
