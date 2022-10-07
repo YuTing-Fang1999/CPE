@@ -29,9 +29,9 @@ The occerrence times of number is same in interval.
 Calculate the same occerrence times of number together.    
 The MSLSM[6] = `1*6 + 2*3 + 3*2 + (4+5+6)*1 - 1`   
 
-`Occurrences times of L ~ R is T (L ~ R 出現的次數皆為 T)`   
-T = N//L `Occerrence times of L (L出現的次數)`    
-R = N//T `Number repeated T times and closest to N (重複T次且最接近N的數)`   
+`Occurrences times of L ~ R is T` (L ~ R 出現的次數皆為 T)    
+T = N//L `Occerrence times of L` (L出現的次數)    
+R = N//T `Number repeated T times and closest to N` (重複T次且最接近N的數)   
 
 init L=0, R=0
 ```
