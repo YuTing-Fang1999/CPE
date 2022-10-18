@@ -4,6 +4,20 @@
 
 1°(度) = 60'(分) = 3600"(秒)
 
+### Sample Input
+```
+500 30 deg
+700 60 min
+200 45 deg
+```
+
+### Sample Output
+```
+3633.775503 3592.408346
+124.616509 124.614927
+5215.043805 5082.035982
+```
+
 #### input
 `s a unit`  
 ```cpp
@@ -11,15 +25,13 @@ r = 6440+s;
 arc = 2*M_PI*r*(a/360);  
 chord = 2*r*sin(a/2 * M_PI/180);  
 ```
-#### 注意要使用M_PI的話，引入要放最上面
+#### 注意要使用M_PI的話，要引入<cmath>
 ```cpp
-#define _USE_MATH_DEFINES
 #include <cmath>
 ```
 
 ### code
 ```cpp
-#define _USE_MATH_DEFINES
 #include <cmath>
 #include <iostream>
 #include <string>
