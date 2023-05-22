@@ -22,6 +22,23 @@ https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
 
 ### Priority Queue
 https://github.com/YuTing-Fang1999/CPE/tree/main/one%20star/UVA13190%20-%20Rockabye%20Tobby  
+```cpp
+    struct Pair{
+        int num;
+        int cnt;
+        Pair(int num, int cnt){
+            this->num = num;
+            this->cnt = cnt;
+        }
+    };
+    struct cmp{
+        bool operator()(Pair p1, Pair p2){
+            return p1.cnt>p2.cnt;
+        }
+    };
+    .......
+    priority_queue<Pair, vector<Pair>, cmp> Q;
+```
 
 ### str reverse
 uva11192
