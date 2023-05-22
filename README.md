@@ -39,7 +39,10 @@ https://github.com/YuTing-Fang1999/CPE/tree/main/one%20star/UVA13190%20-%20Rocka
     .......
     priority_queue<Pair, vector<Pair>, cmp> Q;
 ```
-
+pair<int,int> 預設是先排first，再排second  
+```cpp
+priority_queue <pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
+```
 ### str reverse
 uva11192
 ```cpp
