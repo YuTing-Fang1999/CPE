@@ -19,6 +19,20 @@ https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
 
 
 ## 基本用法
+### lower_bound & upper_bound
+【用途】針對「已經排序」的資料進行binary search。  
+```cpp
+vector <int> v;  
+sort(v.begin(), v.end());  
+```
+lower_bound：找出vector中「大於或等於」val的「最小值」的位置：  
+```cpp
+auto it = lower_bound(v.begin(), v.end(), val);  
+```
+upper_bound：找出vector中「大於」val的「最小值」的位置：  
+```cpp
+auto it = upper_bound(v.begin(), v.end(), val);  
+```
 
 ### Priority Queue
 https://github.com/YuTing-Fang1999/CPE/tree/main/one%20star/UVA13190%20-%20Rockabye%20Tobby  
