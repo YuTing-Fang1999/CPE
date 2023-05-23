@@ -4,6 +4,10 @@
 https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
 
 # CPE
+## 萬能標頭檔
+```cpp
+#include<bits/stdc++.h>
+```
 ## 需複習的
 10268(考前再練一次)   
 11728(如果正著推很難算就用逆推的!)   
