@@ -32,6 +32,14 @@ while(getline(ss, dir, ' ')){ // 以' '做分割
 	i++;
 }
 ```
+### int to string
+```python
+to_string(val)
+```
+### string to int
+```python
+stoi(str)
+```
 ### lower_bound & upper_bound
 【用途】針對「已經排序」的資料進行binary search。  
 ```cpp
