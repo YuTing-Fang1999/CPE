@@ -23,6 +23,15 @@ https://docs.microsoft.com/zh-tw/visualstudio/releasenotes/vs2010-sp1-vs
 
 
 ## 基本用法
+### 使用 stringstream 與 getline 做字串分割
+```python
+stringstream ss(str);
+while(getline(ss, dir, ' ')){ // 以' '做分割
+	dir_list[i] = dir;
+	cout<<dir_list[i]<<endl;
+	i++;
+}
+```
 ### lower_bound & upper_bound
 【用途】針對「已經排序」的資料進行binary search。  
 ```cpp
